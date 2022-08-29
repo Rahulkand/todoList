@@ -1,0 +1,90 @@
+body{
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #A683E3 50% , #E4E9FD 50% );
+    min-height: 1000px;
+}
+.Abouttheday{
+    text-align: center;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    padding: 10px 50px;
+    background-color: #A683E3;
+}
+.list{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list-items-main
+{
+    min-width: 300px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.list-item{
+   display: flex;
+   border-bottom: 2px solid black;
+}
+input:checked+#p {
+    text-decoration: line-through;
+    text-decoration-color: #A683E3;
+  }
+.checkbox
+{
+    margin-left: 15px;
+}
+form{
+    text-align: center;
+}
+#p{
+    margin-top: 16px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #00204a;
+    width: 60px;
+}
+#input{
+    width: 250px;
+    height: 59px;
+    margin-top: 5px;
+    border: none;
+}
+.button{
+    width: 34px;
+    height: 35px;
+    border-radius: 60%;
+    border-color: transparent;
+    background-color: #A683E3;
+    color: #fff;
+    
+}
+::placeholder {
+    color: grey;
+    opacity: 1;
+  }
+footer{
+    margin-top: 30px;
+    text-align: center;
+}
+.button-rm{
+    width: 250px;
+    text-align: right;
+}
+.buttn{
+    width: 40px;
+    height: 40px;
+    margin : 15px 30px 0 0;
+    border-radius: 50%;
+    border: none;
+    background-color: #A683E3;
+    color: #fff;
+}

@@ -1,0 +1,26 @@
+<%- include ("header.ejs") -%>
+    <div class="container-fluid content">
+        <div class="Abouttheday">
+            <h1><%= Title %></h1>
+        </div>
+        <div class="list">
+            <div class="list-items-main">
+                <% for(i=0;i<item.length;i++) { %>
+                    <form action="/delete" method="post">
+                        <div class="list-item">
+                            <input type="checkbox" class="checkbox" name="checkbox" value ="<%= item[i]._id%>" onChange="this.form.submit()">
+                            <p id="p"><%= item[i].item_name %></p>
+                        </div>
+                        <input type="hidden" name = "list_title" value = "<%= Title %>">
+                    </form>
+                <% } %>
+                <div class="form">
+                    <form action="/" method="post">
+                        <input type="text" name="todoitem" autocomplete="off" id="input" autofocus placeholder="New Item">
+                        <button type="submit" class="button" name="route" value = "<%= Title %>">+</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<%- include ("footer.ejs") -%>
